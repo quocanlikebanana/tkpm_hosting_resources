@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>C# Coding Standards</title>
+    <link href="/cs.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1>C# Coding Standards</h1>
+
+
+    <p style="margin-top: 2em;">
+        This is coding guidelines for the languague C# and .NET framework based on
+        <a target="_blank"
+           href="https://docs.nopcommerce.com/en/developer/tutorials/coding-standards.html#language-conventions">nopCommerce</a>
+        website.
+    </p>
+    <p>There are three convention categories:</p>
+    <ul>
+        <li>Language conventions</li>
+        <li>Formating conventions</li>
+        <li>Naming conventions</li>
+    </ul>
+
+
+    <h2>Language Conventions</h2>
+    <p>Prefer to use shortened syntaxes</p>
+    <ul>
+        <h3>Framework</h3>
+        <li>Prefer the code element (fields, properties, methods, or events) not to be prefaced with this.</li>
+        <li>Prefer language keywords instead of framework type names for type references.</li>
+        <li>Accessibility modifiers declared explicitly except for public interface members.</li>
+        <h3>Initialization</h3>
+        <li>Prefer objects, collections to be initialized using object initializers when possible.</li>
+        <li>Tuples, anonymous type should has named properties.</li>
+        <li>Prefer auto-properties over properties with private backing fields.</li>
+        <h3>Combined operators and keywords</h3>
+        <li>Prefer ternary conditional <code>?:,</code>, compound assignment <code>+=, -=, ...</code>, null
+            coalescing<code>??</code>, null-conditional<code>?.</code>.</li>
+        <li>Prefer var over explicit type in all cases.</li>
+        <li>Prefer pattern matching (<code>is</code>) instead of expressions with type casts or
+            <code>as</code> expressions with null checks.
+        </li>
+        <h3>Shortening</h3>
+        <li>Prefer expression bodies for single lines: propteries, indexers, accessors (<code>get</code>,
+            <code>set</code>), or lambdas.
+        </li>
+    </ul>
+
+
+    <h2>Formatting Conventions</h2>
+    <p>Based on the default spacing option.</p>
+    <ul>
+        <h3>New line</h3>
+        <li>Require braces to be on a new line for all expressions ("Allman" style).</li>
+        <li>Place else, catch, finally statements on a new line.</li>
+        <li>Require members of object initializers, anonymous types, and query expression (linq) to be on separate lines
+            inside object.</li>
+        <li>One statement or declaration should be on a single line.</li>
+        <li>Classes, functions, methods, or namespaces should be separated by atleast 2 empty lines without comments.
+        </li>
+        <h3>Space</h3>
+        <li>Remove space between the cast and the value.</li>
+        <li>Insert space between assignment.</li>
+        <li>Insert space after a comma, and Remove space after comma (<code>,</code>).</li>
+        <li>Insert space after a semicolon, and Remove space after semicolon (<code>;</code>).</li>
+    </ul>
+
+
+    <h2>Naming Conventions</h2>
+    <p>Notation types are: _prefixCamelCase, camelCase, PascalCase and CONSTANT_TYPE, with additional characters on
+        special types.</p>
+    <ul>
+        <li class="red-bold">Use a descriptive name and avoid acronym.</li>
+        <h3>Notation</h3>
+        <li>Constants are named only in capital letters with a delimiter <code>_</code>.</li>
+        <li><code>classes</code>, <code>interfaces</code>, <code>structures</code>, <code>public fields</code>,
+            <code>methods</code>, <code>enums</code>, <code>events</code>, <code>properties</code>,
+            <code>namespaces</code>, <code>generics</code> and <code>delegates</code> are referred to as
+            <code>PascalCase</code>.
+        </li>
+        <li>Private and protected class fields must begin with the prefix <code>_</code> and use <code>camelCase</code>
+            notation.</li>
+        <li>Variables, method parameters are named in camelCase notation.</li>
+        <h3>Additional characters</h3>
+        <li>Interface names must have the prefix <code>I</code>.</li>
+        <li>Generics names must have the prefix <code>T</code>.</li>
+        <li>Boolean functions or variables must have prefix "is".</li>
+    </ul>
+
+
+    <h2>File</h2>
+    <ul>
+        <li>Use meaningful and descriptive namespaces and organize namespaces hierarchically with each level
+            representing a logical grouping of related functionality.</li>
+        <li class="red-bold">Prefer one class per file, except for too simple classes.</li>
+        <li>Use PascalCase for file names.</li>
+        <li>Filed name after the primary class (usally there is only one class).</li>
+    </ul>
+
+
+    <h2>Some Practices</h2>
+    <ul>
+        <li>Avoid using unnecessary <code>using</code> directives.</li>
+        <li>Avoid using <code>magic numbers</code>. Instead, use constants or enums.</li>
+        <li>Handle exceptions gracefully, and avoid catching generic exceptions.</li>
+        <li class="red-bold">Prefer understandable code than having to comment for others or even yourself to understand
+            it.</li>
+        <li>Comments, if have to, explaining the "why" rather than the "what".</li>
+    </ul>
+
+
+    <h3 class="ending"> <a class="linking-chain"
+           href="./cs.html">Go back</a></h3>
+</body>
+
+
+</html>

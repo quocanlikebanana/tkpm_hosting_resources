@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>JS Coding Standards</title>
+    <link href="/cs.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1>JavaScript Coding Standards</h1>
+
+
+    <p style="margin-top: 2em;">
+        This is coding guidelines for the languague JavaScript and some frameworks.
+    </p>
+
+
+    <h2>Language Conventions</h2>
+    <ul>
+        <h3>Variables</h3>
+        <li>Declare variables with <code>const</code> by default. Use <code>let</code> only when reassignment is needed.
+        </li>
+        <li>Initialize variables at the top of their scope.</li>
+        <li>Use single quotes <code>'...'</code> for string literals unless escaping is needed.</li>
+        <li>Use strict equality === and inequality !== operators.</li>
+        <li>Avoid using <code>var</code>.</li>
+        <li>Avoid using global variables whenever possible.</li>
+        <li>Avoid using <code>magic numbers</code>. Instead, use constants or enums.</li>
+        <h3>Functions</h3>
+        <li>Use function expressions (<code>function(...) {...}</code> or <code>(...) => {...}</code>) rather than
+            function declarations unless you need a named function for re-using.
+        </li>
+        <li>Use arrow functions <code>(...) => {...}</code> for anonymous functions (like function input) or when
+            <code>this</code> context is not required.
+        </li>
+        <h3>Objects and Classes</h3>
+        <li>Use object literals <code>{}</code> and array literals <code>[]</code> for object and array creation.</li>
+        <li>Use object method shorthand <code>foo() {...}</code> when creating methods within objects and classes.</li>
+    </ul>
+
+
+    <h2>Formatting Conventions</h2>
+    <ul>
+        <li>Use tabs of 4 spaces for indentation.</li>
+        <li>Use semicolons to terminate statements.</li>
+    </ul>
+
+
+    <h2>Naming Conventions</h2>
+    <ul>
+        <li class="red-bold">Use a descriptive name and avoid acronym.</li>
+        <li>Use <code>camelCase</code> for everything except constants, and classes (variables, functions, and
+            objects and its properties).</li>
+        <li>Use <code>PascalCase</code> for constructor fucntions or classes.</li>
+        <li>Constants are named only in capital letters with a delimiter <code>_</code>.</li>
+        <li>Boolean functions or variables must have prefix "is".</li>
+    </ul>
+
+
+    <h2>Some Practices</h2>
+    <ul>
+        <li class="red-bold">Prefer understandable code than having to comment for others or even yourself to understand
+            it.</li>
+        <li>Comments, if have to, explaining the "why" rather than the "what".</li>
+    </ul>
+
+
+    <h3 class="ending"><a class="linking-chain"
+           href="./cs.html">Go back</a></h3>
+</body>
+
+
+</html>
