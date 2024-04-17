@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Git Workflow Practices</title>
+    <link href="cs.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Title -->
+    <h1>Git Workflow Practices</h1>
+
+
+    <p style="margin-top: 2em;">
+        These are guidelines and rules for using git. Based on these documents:
+    </p>
+    <ul>
+        <li><a class="linking-chain"
+               target="_blank"
+               href="https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60"></a>Git Commit Best Practices
+        </li>
+        <li><a target="_blank"
+               class="linking-chain"
+               href="https://medium.com/@saeid/10-essential-practices-for-better-git-commits-and-why-they-matter-3cfc420bf53e"></a>10
+            Essential Practices for Better Git Commits and Why They Matter</li>
+        <li><a target="_blank"
+               class="linking-chain"
+               href="https://blog.stackademic.com/git-workflow-best-practices-for-a-smooth-and-efficient-development-process-2e43e4f2eb2e"></a>Git
+            Workflow: Best Practices for a Smooth and Efficient Development Process</li>
+        <li><a target="_blank"
+               class="linking-chain"
+               href="https://www.engati.com/blog/git-branching-strategies#:~:text=GIT%20branching%20strategies%20are%20patterns,%2C%20stability%2C%20%26%20release%20management."></a>4
+            GIT branching strategies that you definitely need to know!</li>
+        <li><a target="_blank"
+               class="linking-chain"
+               href="https://dev.to/varbsan/a-simplified-convention-for-naming-branches-and-commits-in-git-il4"></a>4
+            A Simplified Convention for Naming Branches and Commits in Git</li>
+    </ul>
+
+
+    <img src="resource/git_workflow.png"
+         style="display: block;width: 75%; margin: auto; margin-top: 3rem; margin-bottom: 3rem; border: 10px solid rgb(152, 152, 152);">
+
+
+    <h2 style="color: red;">RULES</h2>
+    <ul>
+        <li>Commit often.</li>
+        <li>Commit related changes.</li>
+        <li>Don't commit half-done work.</li>
+        <li>Test before commit.</li>
+        <li>Write meaningful commit messages.</li>
+        <li>Use branches extensively in your development.</li>
+        <li>Avoid committing generated files (bin, node_packages, ...) with .gitignore.</li>
+        <li>Make sure to create a new branch for every new feature and bug from staging/integration.</li>
+        <li class="red-bold">Pull before push.</li>
+        <li class="red-bold">Never commit directly to the Dev/Main/Master/Deploy branch.</li>
+    </ul>
+
+
+    <h2>Commit Message</h2>
+    <p>A standard git commit message typically appears as follows: </p>
+    <p><code>[type][scope (optional)]: [subject]</code></p>
+    <p><code>[body]</code></p>
+
+    <ul>
+        <h3>These are the commit types:</h3>
+        <li><code>feat</code> is for adding a new feature.</li>
+        <li><code>fix</code> is for fixing a bug.</li>
+        <li><code>refactor</code> is for changing code for peformance or convenience purpose (e.g. readibility).</li>
+        <li><code>chore</code> is for everything else (writing documentation, formatting, adding tests, cleaning useless
+            code etc.).
+        </li>
+    </ul>
+
+
+    <h2>Branch Naming</h2>
+    <p>A standard git branch name typically appears as follows: <code>[category]-[owner]-[subject]</code></p>
+    <ul>
+        <h3>These are the branch categorires:</h3>
+        <li><code>feature</code> is for adding, refactoring or removing a feature.</li>
+        <li><code>bugfix</code> is for fixing a bug.</li>
+        <li><code>hotfix</code> is for changing code with a temporary solution and/or without following the usual
+            process (usually because of an emergency).</li>
+        <li><code>test</code> is for experimenting/testing.</li>
+    </ul>
+
+
+    <h3 class="ending"><a class="linking-chain"
+           href="./index.html">Go back</a></h3>
+</body>
+
+
+</html>
